@@ -1,10 +1,10 @@
 import styles from "./Header.module.scss";
 import cookchef from "../../assets/images/cookchef.png";
 import HeaderMenu from "./components/HeaderMenu/HeaderMenu";
-import { useState } from "react";
+import React from "react";
 
 function Header({ setPage }) {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
     <header className={`${styles.header} d-flex flex-row align-items-center`}>
